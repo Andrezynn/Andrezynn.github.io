@@ -1,0 +1,146 @@
+*{
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(15, 0, 58);
+}
+body{
+    font-size: 21px;
+}
+.botton-header{
+    color:rgb(15, 0, 58);
+    background-color: rgb(235, 191, 240);
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0px rgb(4, 3, 37);
+    transition: 0.3s;
+}
+.botton-header:hover{
+    box-shadow: 10px 10px 0px 0px rgb(4, 3, 37);
+}
+.title-header, b{
+    font-size: 30px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.corfoto{
+    border: 3px solid;
+    float: right;
+    border-radius: 10px;
+    width:300px;
+}
+@keyframes moving{
+    0%{
+        box-shadow: 30px 30px 0px 0px rgb(4, 3, 37);
+    }
+    25%{
+        box-shadow: 30px -30px 0px 0px rgb(4, 3, 37);
+
+    }
+    50%{
+        box-shadow: -30px -30px 0px 0px rgb(4, 3, 37);
+
+    }
+    75%{
+        box-shadow: -30px 30px 0px 0px rgb(4, 3, 37);
+    }
+    100%{
+        box-shadow: 30px 30px 0px 0px rgb(4, 3, 37);
+    }
+}
+.cor{
+    margin-left: 0px;
+}
+.cover-caption {
+  top:20%;
+
+  background-color: rgb(235, 191, 240);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 0px 0px rgb(4, 3, 37);
+  animation: moving 15s linear infinite;
+}
+@media(max-width:1400px){
+    .corfoto{
+        float: none;
+        margin: 0 auto;
+    }
+    .col-info{
+        padding-bottom: 15px;
+    }
+    .cover-caption{
+        top:20%;
+        padding: 10px;
+    }
+}
+@media(max-width:667px){
+    .corfoto{
+        float: none;
+        margin: 0 auto;
+        width: 280px;
+    }
+    .col-info{
+        padding-bottom: 15px;
+    }
+    .cover-caption{
+        top:10%;
+        padding: 10px;
+    }
+}
+@media(max-width:500px){
+    .corfoto{
+        float: none;
+        margin: 0 auto;
+        width: 250px;
+    }
+    .col-info{
+        padding-bottom: 15px;
+    }
+    .cover-caption{
+        top:10%;
+        padding: 10px;
+        margin: 20px;
+    }
+    .start-50{
+        left: 0%!important;
+    }
+    .translate-middle-x{
+        transform: translateX(0%)!important;
+    }
+}
+
+
+.social-media{
+    display: flex;
+}
+#img-sm{
+    padding: 10px;
+    margin-right: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px 0px rgb(4, 3, 37);
+}
+.header{
+    background: rgba(110, 0, 183, 0.644);
+    border-style: none none solid none;
+    border-width: 1px;
+}
+.cover-image {
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image: URL("https://staylime.com/content/images/services/magento-design/bg.jpg");
+}
+body, html {
+    height: 100%;
+    margin:0;
+}
